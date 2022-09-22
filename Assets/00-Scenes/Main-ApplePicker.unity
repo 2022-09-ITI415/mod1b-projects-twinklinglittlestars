@@ -175,8 +175,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792234105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -308,6 +308,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5812374045669730524, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
+      propertyPath: leftAndRightEdge
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7468076611236084627, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -318,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468076611236084627, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7468076611236084627, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
       propertyPath: m_LocalPosition.z
@@ -356,5 +360,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7175947508769902290, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
