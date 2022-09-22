@@ -316,6 +316,10 @@ PrefabInstance:
       propertyPath: leftAndRightEdge
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5812374045669730524, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
+      propertyPath: chanceToChangeDirections
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 7468076611236084627, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
       propertyPath: m_RootOrder
       value: 2
