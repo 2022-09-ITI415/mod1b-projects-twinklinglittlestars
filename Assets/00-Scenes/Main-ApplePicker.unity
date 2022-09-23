@@ -326,6 +326,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &1514693065
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +338,7 @@ GameObject:
   - component: {fileID: 1514693066}
   - component: {fileID: 1514693068}
   - component: {fileID: 1514693067}
+  - component: {fileID: 1514693069}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -406,6 +408,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514693065}
   m_CullTransparentMesh: 1
+--- !u!114 &1514693069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514693065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf637ef80dd144c1c99b86f4b40cd118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1572004184
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +672,10 @@ PrefabInstance:
     - target: {fileID: 5812374045669730524, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
       propertyPath: speed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812374045669730524, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
+      propertyPath: chanceToChangeDirections
+      value: 0.0005
       objectReference: {fileID: 0}
     - target: {fileID: 7468076611236084627, guid: 2190a08d23ecc4ce8a1fde2b0aada720, type: 3}
       propertyPath: m_RootOrder
