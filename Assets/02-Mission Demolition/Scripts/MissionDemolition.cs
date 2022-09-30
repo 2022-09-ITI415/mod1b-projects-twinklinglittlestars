@@ -60,7 +60,7 @@ public class MissionDemolition : MonoBehaviour
         shotsTaken = 0;
 
         //reset the camera
-        SwitchView("wShowBoth");
+        SwitchView("Show Both");
         ProjectileLine.S.Clear();
 
         //reset the goal
