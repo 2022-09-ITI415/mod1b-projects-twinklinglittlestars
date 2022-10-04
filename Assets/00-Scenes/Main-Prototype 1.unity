@@ -657,6 +657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1731092631}
   - component: {fileID: 1731092630}
+  - component: {fileID: 1731092632}
   m_Layer: 0
   m_Name: Sling
   m_TagString: Untagged
@@ -696,6 +697,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -15, z: 0}
+--- !u!114 &1731092632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731092629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e256e96c4d54ba79351378f332cb41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabProjectile: {fileID: 467488311425804525, guid: fb3dc2b891b724ae9b20db3736bb56a8, type: 3}
+  velocityMult: 8
+  launchPoint: {fileID: 0}
+  launchPos: {x: 0, y: 0, z: 0}
+  projectile: {fileID: 0}
+  aimingMode: 0
 --- !u!1 &1971160145
 GameObject:
   m_ObjectHideFlags: 0
