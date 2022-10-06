@@ -8,7 +8,7 @@ public class Sling : MonoBehaviour
     // fields set in the Unity Inspector pane
     [Header("Set in Inspector")]
 
-    public GameObject prefabProjectile;
+    public GameObject prefabKirbyEdited;
     public float velocityMult = 8f;
 
     // fields set dynamically
@@ -16,10 +16,10 @@ public class Sling : MonoBehaviour
 
     public GameObject launchPoint;
     public Vector3 launchPos;
-    public GameObject projectile;
+    public GameObject KirbyEdited;
     public bool aimingMode;
 
-    private Rigidbody projectileRigidbody;
+    private Rigidbody kirbyEditedRigidbody;
     static public Vector3 LAUNCH_POS
     {
         get
@@ -54,12 +54,12 @@ public class Sling : MonoBehaviour
         // The player has pressed the mouse button while over Slingshot
         aimingMode = true;
         //Instantiate a Projectile
-        projectile = Instantiate(prefabProjectile) as GameObject;
+        KirbyEdited = Instantiate(prefabKirbyEdited) as GameObject;
         //Start it at the launchPoint
-        projectile.GetComponent<Rigidbody>().isKinematic = true;
+        KirbyEdited.GetComponent<Rigidbody>().isKinematic = true;
         // Set it to isKinematic for now
-        projectileRigidbody = projectile.GetComponent<Rigidbody>();
-        projectileRigidbody.isKinematic = true;
+        kirbyEditedRigidbody = KirbyEdited.GetComponent<Rigidbody>();
+        kirbyEditedRigidbody.isKinematic = true;
     }
 
     void Update()
@@ -83,18 +83,18 @@ public class Sling : MonoBehaviour
 
         //Move the projectile to this new position
         Vector3 projPos = launchPos + mouseDelta;
-        projectile.transform.position = projPos;
+        KirbyEdited.transform.position = projPos;
 
         if (Input.GetMouseButtonUp(0))
         {
             // the mouse has been released
             aimingMode = false;
-            projectileRigidbody.isKinematic = false;
-            projectileRigidbody.velocity = -mouseDelta * velocityMult;
-            FollowCam.POI = projectile;
-            projectile = null;
-            MissionDemolition.ShotsFired();
-            ProjectileLine.S.poi = projectile;
+            kirbyEditedRigidbody.isKinematic = false;
+            kirbyEditedRigidbody.velocity = -mouseDelta * velocityMult;
+            FollowCam.POI = KirbyEdited;
+            KirbyEdited = null;
+            KMissionDemolition.ShotsFired();
+            KProjectileLine.S.poi = KirbyEdited;
         }
     }
 }
