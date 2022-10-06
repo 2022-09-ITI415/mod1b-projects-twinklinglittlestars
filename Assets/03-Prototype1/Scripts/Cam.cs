@@ -36,7 +36,7 @@ public class Cam : MonoBehaviour
             //Get the position of the poi
             destination = POI.transform.position;
             // if poi is a projectile, check to see if it's at rest
-            if (POI.tag == "KirbyEdited")
+            if (POI.tag == "KirbyEdited") // changed projectile to kirbyedited
             {
                 // if it is sleeping (that is, not moving)
                 if (POI.GetComponent<Rigidbody>().IsSleeping())

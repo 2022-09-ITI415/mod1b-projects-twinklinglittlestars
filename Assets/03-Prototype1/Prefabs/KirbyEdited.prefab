@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: -7579083863760094172}
   m_Layer: 0
   m_Name: KirbyEdited
-  m_TagString: Untagged
+  m_TagString: KirbyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

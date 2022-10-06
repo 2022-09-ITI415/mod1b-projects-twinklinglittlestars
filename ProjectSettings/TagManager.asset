@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Apple
   - Projectile
+  - KirbyProjectile
   layers:
   - Default
   - TransparentFX
