@@ -91,7 +91,7 @@ public class Sling : MonoBehaviour
             aimingMode = false;
             kirbyEditedRigidbody.isKinematic = false;
             kirbyEditedRigidbody.velocity = -mouseDelta * velocityMult;
-            FollowCam.POI = KirbyEdited;
+            Cam.POI = KirbyEdited;
             KirbyEdited = null;
             KMissionDemolition.ShotsFired();
             KProjectileLine.S.poi = KirbyEdited;

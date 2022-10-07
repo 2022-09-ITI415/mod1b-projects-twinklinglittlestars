@@ -49,7 +49,7 @@ public enum GameMode
             }
 
             // destroy old projectiles if they exist
-            GameObject[] gos = GameObject.FindGameObjectsWithTag("KirbyEdited"); // changed projectile to kirbyedited
+            GameObject[] gos = GameObject.FindGameObjectsWithTag("KirbyProjectile"); // changed projectile to kirbyedited
             foreach (GameObject pTemp in gos)
             {
                 Destroy(pTemp);
